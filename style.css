@@ -1,0 +1,244 @@
+/*
+ Theme Name:   Twenty Sixteen Child
+ Theme URI:    http://www.vpmc.com.br/twentysixteen-chd/
+ Description:  Twenty Sixteen Child Theme - Main change is to make all posts but the mainshow only the excerpt with thumbnail.
+ Author:       Vitor Conceicao
+ Author URI:   http://vpmc.com.br
+ Template:     twentysixteen
+ Version:      1.0.0
+ Tags:         black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready, responsive-layout, infinite-scroll, post-slider, design, food, journal, magazine, news, photography, portfolio, clean, contemporary, dark, elegant, modern, professional, sophisticated
+ Text Domain:  twenty-sixteen-child
+*/
+
+
+/* Uses RSS Icon for .xml URLs on social menu  */
+
+
+.social-navigation a[href*="radio3.io"]:before {
+	content: "\f475";
+}
+
+.social-navigation a[href*=".xml"]:before {
+	content: "\f413";
+}
+
+
+
+
+/* Tweaks to get the Super RSS Reader Widget to play nicely with the layout           */
+
+/* Hide Title  */
+.srr-title {
+	display: none;
+        
+}
+
+.srr-item {
+    font-family: Montserrat, "Helvetica Neue", sans-serif;
+    color: #686868;
+    font-size: 0.8125rem;
+    line-height: 1.6153846154;
+    margin-bottom: 5px;
+}
+
+.srr-date {
+    color: #1a1a1a;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.srr-meta {
+    margin-bottom: 0px;
+}
+
+
+/*  Better styling ordered lists for posts   */
+
+
+.entry-content ol {
+    list-style: none;
+    padding:0;
+    margin:0;
+    counter-reset: listStyle;
+}
+
+.entry-content ol li:before {
+    content: counter(listStyle, decimal);
+    counter-increment: listStyle;
+    font-size: 50px;
+    left: 0px;
+    top: -18px;
+    padding-right: 24px;
+    position: absolute;
+}
+
+
+.entry-content ol li {
+     position: relative;
+     padding-bottom: 36px;
+     padding-left: 48px;
+     
+}
+
+
+/* Category and other Archives descriptions  */
+
+.taxonomy-description {
+
+    font-size: 16px;
+    padding-left: 48px;
+    padding-right: 24px;
+    padding-top: 24px;
+
+}
+
+
+
+.entry-footer > span:not(:last-child):after {
+	content: "";
+}
+
+
+/* Show Avatar, Author info and Bio on home page  */
+
+
+.sticky .posted-on,
+.posted-on,
+.cat-links,
+.byline {
+	display: block;
+        margin-bottom: 7px;
+}
+
+
+.author-bio:first-child {
+padding-top: 20px;
+}
+
+blockquote {
+    font-size: 22px;
+}
+
+
+/* Formatting post excerpts */
+
+
+.entry-title .excerpt,
+.entry-title .excerpt a {
+
+    font-size:20px;
+    text-decoration: none;
+    color: #1a1a1a;
+    margin-bottom: 0px;
+
+}
+
+
+.entry-content .excerpt,
+.entry-content .excerpt p,
+.entry-content .excerpt p a,
+.entry-content .excerpt a {
+
+    text-decoration: none;
+    font-family: Merriweather, Georgia, serif;
+    color: #686868;
+    font-size: 14px;
+
+
+}
+
+.post-list {
+    display: block;
+    font-family: Montserrat, "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-top: 4px solid #1a1a1a;
+    padding-top: 21px;
+    padding-bottom: 21px;
+}
+
+.other-posts {
+       display: block;
+}
+
+
+/* Page Image    */
+
+.page-img {
+	position: relative;
+	float: left;
+}
+
+
+
+
+
+/**
+ * 14.0 - Media Queries
+ */
+
+/**
+ * 14.1 - >= 710px
+ */
+
+@media screen and (min-width: 44.375em) {
+
+
+}
+
+
+/**
+ * 14.2 - >= 783px 
+ */
+
+@media screen and (min-width: 48.9375em) {
+
+}
+
+
+
+/**
+ * 14.3 - >= 910px
+ */
+
+@media screen and (min-width: 56.875em) {
+
+        /* widen the menu a few pixels to prevent line-break */
+
+	.main-navigation ul ul a {
+		white-space: normal;
+		width: 210px;
+	}
+
+.page-content {
+ 
+	margin-left: 220px;
+}
+
+.page-img {
+	position: absolute;
+	float: left;
+}
+
+}
+
+
+/**
+ * 14.4 - >= 985px
+ */
+
+@media screen and (min-width: 61.5625em) {
+
+
+}
+
+
+
+/**
+ * 14.5 - >= 1200px
+ */
+
+@media screen and (min-width: 75em) {
+
+
+}
